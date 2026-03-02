@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F98E63F82E56074C00A0DE37 /* SwiftSMTP in Frameworks */ = {isa = PBXBuildFile; productRef = F98E63F72E56074C00A0DE37 /* SwiftSMTP */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F905F1372E54C5CC00ED2D41 /* HockeyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F99E39502EE199DB0031D598 /* Exceptions for "HockeyApp" folder in "HockeyApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Untitled.swift,
+			);
+			target = F905F1362E54C5CC00ED2D41 /* HockeyApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F905F1392E54C5CC00ED2D41 /* HockeyApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F99E39502EE199DB0031D598 /* Exceptions for "HockeyApp" folder in "HockeyApp" target */,
+			);
 			path = HockeyApp;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F98E63F82E56074C00A0DE37 /* SwiftSMTP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = HockeyApp;
 			packageProductDependencies = (
+				F98E63F72E56074C00A0DE37 /* SwiftSMTP */,
 			);
 			productName = HockeyApp;
 			productReference = F905F1372E54C5CC00ED2D41 /* HockeyApp.app */;
@@ -91,9 +110,13 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F905F12E2E54C5CC00ED2D41;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F98E63F62E56074C00A0DE37 /* XCRemoteSwiftPackageReference "Swift-SMTP" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F905F1382E54C5CC00ED2D41 /* Products */;
 			projectDirPath = "";
@@ -185,6 +208,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -242,6 +266,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -253,7 +278,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZYCY24J2LU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -281,7 +306,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZYCY24J2LU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -324,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F98E63F62E56074C00A0DE37 /* XCRemoteSwiftPackageReference "Swift-SMTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/Swift-SMTP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F98E63F72E56074C00A0DE37 /* SwiftSMTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F98E63F62E56074C00A0DE37 /* XCRemoteSwiftPackageReference "Swift-SMTP" */;
+			productName = SwiftSMTP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F905F12F2E54C5CC00ED2D41 /* Project object */;
 }

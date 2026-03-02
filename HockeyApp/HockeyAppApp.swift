@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct HockeyAppApp: App {
+//    let registrationViewModel = RegistrationViewModel()
+//    let authorizationViewModel = AuthorizationViewModel()
+//    @State private var path = NavigationPath()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            CoordinatorView()
+//            EventCardView()
+            MainScreenView()
+//            RegistrationView(viewModel: registrationViewModel)
+//            AuthorizationView(viewModel: authorizationViewModel)
         }
     }
 }
+
